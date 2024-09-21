@@ -1,16 +1,34 @@
-# Data Description:
-- classification dataset
-- around 2100 training samples and around 1000 test samples
-- first 350 columns (length_51, length_52, ..., length_400) are features: "length_51" denotes the max normalized frequency of DNA fragment length 51
-- last column (class_label) is the sample class: healthy/screening stage/early stage/mid stage/late stage cancer
-- It's a class imbalanced dataset
+IT1244 Project Team32
 
-# Task:
-- need to classify cancer vs healthy
-- need to try and do well for (1) screening stage cancer vs healthy and (2) early stage cancer vs healthy
-- need to use appropriate metrics (not accuracy) to account for positive class accuracy and negative class accuracy
+The code folder consists of the following: 
+Cancer vs Healthy Code
+Early Stage vs Healthy Code
+Neural Network Code
+All code was done on Google Colab. Please open the files in numerical order.
 
-# Suggestions:
-- perform appropriate normalization and feature extraction through data visualization
-- design appropriate loss function for your model
-- perform innovation in modeling this task througb introduction of multiple models
+Before running any of the code, do upload the Train.csv and Test.csv files into Google Colab. 
+Please run the code in each file in chronological order. (Do not run the next code if the previous has not been run.)
+
+1. Cancer vs Healthy
+This code contains:
+Data Cleaning
+Feature Selection (PCA)
+Logistic Regression (Baseline method)
+Random Forest - SMOTE and API
+Support Vector Machine - GridSearchCV
+
+2. Early Stage vs Healthy
+This code contains:
+Data Cleaning and Filtering
+Feature Selection (PCA)
+Logistic Regression (Baseline method)
+Random Forest - SMOTE and API
+Support Vector Machine - GridSearchCV
+
+3. Neural Network
+This code contains: 
+Overview of Data Distribution
+Data Cleaning
+Feature Selection (PCA)
+Multilayer Neural Network for Cancer vs Healthy and Early Stage vs Healthy
+Multilayer Neural Network with error function
